@@ -4,4 +4,4 @@ Projeto desenvolvido utilizando Robot Framework.
 
 ## Run
 
-- Para executar os testes usar `robot -d log/ tests/arquivo.robot`
+- Para executar os testes usar `robot -d ./log tests/`
