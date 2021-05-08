@@ -8,7 +8,7 @@ Go Checkout
   ${element}      Set Variable      css=.page-header
 
   Click                       text=Fechar Pedido
-  Wait For Elements State     ${element}      visible       10
+  Wait For Elements State     ${element}      visible       ${DEFAULT_TIMEOUT}
   Get Text                    ${element}      contains      Finalize o seu pedido
 
 Fill Data Customer
@@ -41,4 +41,4 @@ Pay Order
   Click       text=Concluir Pedido
 
 Order Should Be Completed
-  Wait For Elements State     css=p >> text=Seu pedido foi recebido pelo restaurante.
+  Wait For Elements State     css=p >> text=Seu pedido foi recebido pelo restaurante.     visible     ${DEFAULT_TIMEOUT}

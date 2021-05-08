@@ -12,7 +12,7 @@ Add To Cart
 Should Exist In The Cart
   [Arguments]     ${name}
 
-  Wait For Elements State     css=#cart tr >> text=${name}      visible     5
+  Wait For Elements State     css=#cart tr >> text=${name}      visible     ${DEFAULT_TIMEOUT}
 
 Total Cart Should be
   [Arguments]     ${total}
